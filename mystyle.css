@@ -1,0 +1,436 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    user-select: none; /*텍스트 드래그 안되게 하는 태그*/   
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+
+.menubar{
+    display: flex; /*넓게 펼침*/
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    align-items: center; /*세로기준  중앙정렬하는 코드*/
+    padding: 8px 15px;
+    height: 200px;
+}
+
+#Logo{
+    box-align: center;
+}
+
+.menubar_items{
+    display: flex;
+    list-style: none;
+}
+
+.menubar_items li{ /*menubar_items 밑에 li를 선택하세요.*/
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+
+.menubar_items li:hover{
+    text-decoration-color: #deff00;
+}
+
+a{
+    color: rgb(0,248,176);
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+a:hover{
+    color: #deff00;
+}
+
+.togglebtn{
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    display: none; /*화면이 작을때만 보여야되니까 그냥 웹에서는 꺼야됨*/
+}
+
+.WholeContainer{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+#container{
+    width: 1080px;
+    margin: auto;
+    margin-top: 50px;;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.row{width: 100%; display: flex;}
+.row2{width: 100%; display: flex;}
+.row4{width: 100%; display: flex;}
+
+.col4{width: 100%; margin: 20px;}
+.col3{width: 75%; margin: 20px;}
+.col2{width: 50%; margin: 20px;}
+.col1{width: 25%; margin: 20px;}
+
+.h50{height: 50px;}
+.h90{height: 90px;}
+.h100{height: 100px;}
+.h200{height: 200px;}
+.h300{height: 300px;}
+.h450{height: 450px;}
+
+div{
+    overflow: hidden; /*div 박스보다 이미지가 커도, 넘치는 부분이 안보이게 해주는 코드*/
+    box-sizing: border-box; /*px값을 더 쉽게 계산할 수 있게 함.*/
+}
+
+
+#slider{
+    display: flex;
+    justify-content: center;
+}
+
+#imageContainer{
+    width: 1080px;
+    height: 450px;
+    display: flex;
+    overflow: hidden;
+}
+
+#imageSlider{
+    width: 5400px;
+    display: flex;
+    transition: transform 0.5s;
+    overflow: visible;
+}
+
+.slideImgBox{width: 1080px; overflow: visible;}
+
+
+#Arrow{
+    width: 1080px;
+    height: 450px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#leftArrow{
+    position: absolute;
+    left: 10px;
+    top: 200px;
+}
+
+#rightArrow{
+    position: absolute;
+    right: 10px;
+    top: 200px;
+    transform: scaleX(-1);
+}
+
+#bottomBtn{
+    display: flex;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottomBtn button{
+    padding: 5px 5px;
+    border: 0px;
+    background-color:#00f8b0;
+    border-radius: 7px;
+}
+
+#bottomBtn button:hover{
+    background-color: #deff00;
+}
+
+#freeimg01{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 150px; 
+    height: 220px;
+    border: 1px solid #00f8b0;
+}
+
+#freeimg01:hover{
+    border: 1px solid #deff00;
+}
+
+#freeimg02{
+    display: flex;
+    width: 305px; 
+    height: 210px;
+    margin-left: 500px;
+    border: 1px solid #00f8b0;
+}
+
+#freeimg02:hover{
+    display: flex;
+    width: 305px; 
+    height: 210px;
+    border: 1px solid #deff00;
+}
+
+#freeimg03{
+    display: flex;
+    width: 390px; 
+    height: 220px;
+    margin-top: 50px;
+    margin-left: 200px;
+    border: 1px solid #00f8b0;
+}
+
+#freeimg03:hover{
+    display: flex;
+    width: 390px; 
+    height: 220px;
+    border: 1px solid #deff00;
+}
+
+#freeimg04{
+    display: flex;
+    width: 225px; 
+    height: 225px;
+    margin-top: 50px;
+    margin-left: 550px;
+    margin-bottom: 100px;
+    border: 1px solid #00f8b0;
+}
+
+#freeimg04:hover{
+    display: flex;
+    width: 225px; 
+    height: 225px;
+    border: 1px solid #deff00;
+}
+
+#best1{
+    border: 1px solid #00f8b0;
+}
+
+#best1:hover{
+    border: 1px solid #deff00;
+    background-color: black;
+}
+
+
+img:hover {
+    opacity: 30%;
+}
+
+#end{
+    margin-bottom: 100px;
+}
+
+footer{
+    padding: 50px 0;
+    background: black;
+    color:#00f8b0;
+    text-align: center;
+}
+
+/* 모바일 화면 설정 >> 크기가 작아졌을 때 바뀌는 구성*/
+
+
+
+@media (max-width: 768px)
+{
+    *{
+        font-size: 40px;
+    }
+    .line{
+        visibility: hidden;
+        display: none;
+    }
+
+    .footer{
+        font-size: 15px;
+    }
+
+    a{
+        font-size: 30px;
+    }
+
+    #container{
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        justify-content: center;
+    }
+    .row{
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .col4{width: 100%; margin: 10px; background-color: rgb(104, 154, 201);}
+    .col3{width: 100%; margin: 10px; background-color: rgb(104, 154, 201);}
+    .col2{width: 45%; margin: 10px; background-color: rgb(104, 154, 201);}
+    .col1{width: 45%; margin: 10px; background-color: rgb(104, 154, 201);}
+
+    .h90{
+        visibility: hidden;
+        display: none;
+    }
+    .h300{height: 300px;}
+
+    .menubarlogo{
+        padding: 0px 0px;
+    }
+
+    .menubar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 20px;
+        height: 100%;
+    }
+
+    .menubar_items{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menubar_items li{
+        width: 60%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .menubar_link{
+        width: 100%;
+        text-align: center;
+        padding: 5px 0px;
+        display: none;
+        justify-content: center;
+        display: none;
+    }
+
+    .togglebtn{
+        display: block; /*블록요소로 설정해서 나타나게 함*/
+    }
+
+    .menubar_items.active, /*액티브를 넣어놓은것임..!*/ /*,를 사용하면 같은 내용을 적을 수 있음*/
+    .menubar_link.active{
+        display: flex;
+    }
+    
+    #slider{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #imageContainer{
+        width: 500px;
+        height: 450px;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    #imageSlider{
+        width: 2500px;
+        display: flex;
+        transition: transform 0.5s;
+        overflow: visible;
+    }
+    
+    .slideImgBox{width: 1080px; overflow: visible;}
+    
+  
+
+    #Arrow{
+        width: 500px;
+        height: 450px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    #leftArrow{
+        position: absolute;
+        left: 10px;
+        top: 180px;
+    }
+    
+    #rightArrow{
+        position: absolute;
+        right: 10px;
+        top: 180px;
+        transform: scaleX(-1);
+    }
+    
+    #bottomBtn{
+        display: flex;
+        margin-bottom: 20px;
+        width: 130px;
+        height: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #bottomBtn button{
+        padding: 5px 5px;
+        border: 0px;
+        background-color:#00f8b0;
+        border-radius: 7px;
+    }
+    
+    #freeimg01{
+        display: flex;
+        margin-top: 100px;
+        margin-left: 100px;
+        width: 150px; 
+        height: 220px;
+        border: 1px solid #00f8b0;
+    }
+    
+    #freeimg02{
+        display: flex;
+        width: 305px; 
+        height: 210px;
+        margin-top: 50px;
+        margin-left: 150px;
+        border: 1px solid #00f8b0;
+    }
+    
+    
+    #freeimg03{
+        display: flex;
+        width: 390px; 
+        height: 220px;
+        margin-top: 50px;
+        margin-left: 30px;
+        border: 1px solid #00f8b0;
+    }
+    
+    
+    #freeimg04{
+        display: flex;
+        width: 225px; 
+        height: 225px;
+        margin-top: 50px;
+        margin-left: 120px;
+        margin-bottom: 100px;
+        border: 1px solid #00f8b0;
+    }
+}
